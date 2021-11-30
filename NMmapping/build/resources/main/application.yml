@@ -1,0 +1,21 @@
+server:
+  port: 9000
+  error:
+    include-stacktrace: never
+  servlet:
+    multipart:
+      maxFileSize: 3MB
+      maxRequestSize: 3MB
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dev_test?characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 1234
+
+spring.jpa:
+  database: MYSQL
+  showSql: true
+  properties.hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  properties.hibernate.hbm2ddl.auto: create

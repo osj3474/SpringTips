@@ -1,0 +1,37 @@
+plugins {
+    id 'org.springframework.boot' version '2.4.3'    // 부트 2.6.x는 호환 문제 가능성.
+                                                     // https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api#1-spring-boot-dependency
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'me.sangjin'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // swagger
+    // 방법 1) http://URL/swagger-ui/index.html  // 3버전의 경우 URL
+    implementation "io.springfox:springfox-boot-starter:3.0.0"
+
+    // 방법 2) http://URL/swagger-ui.html  // 2버전의 경우 URL
+//    implementation("io.springfox:springfox-swagger2:2.9.2") {   // swagger을 사용하기 위함.
+//        exclude module: 'swagger-annotations'
+//        exclude module: 'swagger-models'
+//    }
+//    implementation("io.swagger:swagger-annotations:1.5.21")
+//    implementation("io.swagger:swagger-models:1.5.21")
+//    implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'  // 예쁜 문서와 테스트 기능을 위함.
+}
+
+test {
+    useJUnitPlatform()
+}

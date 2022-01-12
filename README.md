@@ -11,6 +11,7 @@
 - swagger : 스웨거 설정하기 <a href="https://github.com/osj3474/SpringTips/tree/main/swagger/src/main/java/me/sangjin/swagger" target="_blank">(코드 바로 가기)</a>
 - response-ok : 응답 형식 커스터 마이징해서 사용하기 - [성공] <a href="https://github.com/osj3474/SpringTips/tree/main/response-ok/src/main/java/me/sangjin/response" target="_blank">(코드 바로 가기)</a>
 - response-ok-fail : 응답 형식 커스터 마이징해서 사용하기 - [성공, 에러] <a href="https://github.com/osj3474/SpringTips/tree/main/response-ok-fail/src/main/java/me/sangjin/response" target="_blank">(코드 바로 가기)</a> ⭐️ (추천해요!)
+- aws_s3 : AWS S3 사용하기 <a href="https://github.com/osj3474/SpringTips/tree/main/aws_s3/src/main/java/me/sangjin/aws_s3" target="_blank">(코드 바로 가기)</a> 
 
 
 

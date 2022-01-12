@@ -48,6 +48,6 @@ public class ProductService {
         Product productById = productRepository.findById(id)
                 .orElseThrow(() -> new ProductNotFoundException(ProductResponseCode.PRODUCT_DELETE_FAIL_NOT_FOUND));
 
-        productRepository.delete(productById); // 삭제 컬럼을 두는 것을 추천. (실 운영에서 실제 삭제하는 경우 없음.)
+        productRepository.delete(productById); // 삭제 컬럼을 두는 것을 추천. ===> 아닌경우도 있음.
     }
 }

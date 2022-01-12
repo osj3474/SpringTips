@@ -1,0 +1,37 @@
+server:
+  port: 8080
+  error:
+    include-stacktrace:
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/dev_test?characterEncoding=UTF-8&serverTimezone=Asia/Seoul
+    username: root
+    password: 1234
+
+  servlet:
+    multipart:
+      max-file-size: 3MB
+      max-request-size: 3MB
+
+  jpa:
+    generate-ddl: true
+    database: MYSQL
+    showSql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+
+
+cloud:
+  aws:
+    credentials:
+      accessKey: IAM 사용자 엑세스 키
+      secretKey: IAM 사용자 비밀 엑세스 키
+    s3:
+      bucket: 버킷 이름
+    region:
+      static: ap-northeast-2
+    stack:
+      auto: false

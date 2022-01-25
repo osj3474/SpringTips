@@ -1,6 +1,6 @@
 plugins {
     id 'org.springframework.boot' version '2.4.3'    // 부트 2.6.x는 호환 문제 가능성.
-                                                     // https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api#1-spring-boot-dependency
+                                                     // https://github.com/springfox/springfox/issues/3462
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
 }
